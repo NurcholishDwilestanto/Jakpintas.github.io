@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Peta Perizinan dan Investasi DKI Jakarta">
+
+    <link href="css/login.css" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+
+    <style type="text/tailwindcss">
+        @import  url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap");
+
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .gradient_card {
+            background: linear-gradient(158deg,
+                    rgb(0, 60, 255) 31%,
+                    rgb(14, 221, 187) 71%);
+        }
+
+        .btn_masuk {
+            background: linear-gradient(90deg,
+                    rgba(255, 158, 67, 0.9) 48%,
+                    rgb(212, 131, 31) 63%);
+        }
+
+        .slogan {
+            background-color: #0956c6;
+        }
+
+        .padding_slogan {
+            padding-bottom: 2%;
+        }
+
+        .title_slogan {
+            font-size: 11px
+        }
+
+        video {
+            filter: brightness(80%);
+        }
+
+        /* konten responsive login mobile */
+
+        @media (min-width: 349px) {
+            .login_responsive_mobile {
+                height: 94vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+                height: calc(var(--vh, 1vh) * 94);
+                /* margin: 0 auto; */
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .hide_video {
+                @apply  hidden;
+            }
+
+            .hide_scrollbar{
+                @apply  w-full h-full overflow-hidden;
+            }
+
+            .footer_login {
+                @apply  mt-auto mb-20 text-center text-xs text-gray-300
+            }
+        }
+
+        @media (min-width: 800px) {
+            .login_responsive_mobile {
+                @apply  flex flex-row min-h-screen;
+            }
+
+            .hide_video {
+                @apply  w-9/12 block;
+            }
+
+            .hide_scrollbar{
+                @apply  h-full w-3/12;
+            }
+
+            .footer_login {
+                @apply  mt-auto mb-12 text-center text-xs text-gray-300;
+            }
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="app">
+        
+
+        <main>
+            <div class="login_responsive_mobile">
+      <div class="hide_video">
+        <video class="w-full h-full object-fill" src="/Media/video1.mp4" type="video/mp4" autoplay="" muted=""></video>
+      </div>
+    <div class="hide_scrollbar gradient_card">
+        <div class="flex flex-col h-[100vh]">
+            <div class="flex flex-row items-center justify-center bg-white">
+
+                <div class="basis-3/12">
+
+                    <div class="flex justify-end mb-1">
+                        <img class="object-cover" src="/Media/logo_jakpintas.png" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="basis-8/12">
+
+                    <div class="flex flex-col items-center justify-center text-center mb-2 py-2">
+                        <div class="w-50">
+                            <span class="text-lg text-black" style="font-size: 14px">Peta Perizinan dan
+                                Investasi</span>
+                        </div>
+                        <div class="w-40">
+                            <div style="font-size: 10px; padding-top: 1.5%"
+                                class="rounded-full slogan h-5 text-xs text-white tracking-wider">
+                                Sistem Pelayanan Informasi
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="p-12">
+                <form action="" method="">
+                    <input type="hidden" name="" value="">                    <div class="">
+                        <div class="">
+                            <input name="email" type="email"
+                                class="w-full px-4 py-1 text-sm rounded-md"
+                                placeholder="Email" />
+                        </div>
+
+                        <div class="" x-data="">
+                            <div class="relative">
+                                <input name="password" placeholder="Password" type="password"
+                                    class="w-full mt-4 px-4 py-1 text-sm rounded-md" />
+                                
+                            </div>
+                        </div>
+
+                        <button
+                            class="block w-full px-4 py-2 mt-4 text-xs font-medium text-center text-white rounded-full btn_masuk"
+                            type="submit">
+                            Login
+                        </button>
+
+                        <hr class="my-7" />
+
+                        <div class="flex items-center justify-center gap-4">
+                          <button class="flex items-center justify-center w-full px-4 py-2 text-sm text-white text-gray-700 border border-gray-300 rounded-full bg-slate-50 border-2 border-orange-600">
+                            <p class="text-black text-xs">Login dengan Google</p>
+                        </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class=" w-full flex justify-center tracking-wide text-center text-xs text-gray-300 ">
+                <div class="">
+                    Akses fitur terbatas dengan <br> email <span class="font-bold">guest@dpmptsp-dki.com</span><br> password
+                    <span class="font-bold">JakPintas2022</span>
+                </div>
+            </div>
+
+            
+                <footer class="footer_login title_slogan">
+                    ©2022 DPMPTSP Pemprov DKI Jakarta
+                </footer>
+        </div>
+    </div>
+</div>
+        </main>
+    </div>
+</body>
+
+
+</html>
